@@ -15,7 +15,7 @@ type TableType =
 
 export const Table: TableType = (props) => {
   return (
-    <div className="syncia_table-container">
+    <div className="watson_table-container">
       <table {...props} />
     </div>
   )

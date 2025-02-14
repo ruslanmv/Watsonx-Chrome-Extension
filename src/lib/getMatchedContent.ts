@@ -27,7 +27,7 @@ const getContextVectorStore = async (
       baseURL: baseURL,
     },
   })
-  const hashKey = `SYNCIA_STORE_EMBEDDINGS_${await createSHA256Hash(context)}`
+  const hashKey = `watson_STORE_EMBEDDINGS_${await createSHA256Hash(context)}`
   const memoryVectors = await readStorage<[]>(hashKey, 'indexedDB')
 
   if (!memoryVectors) {

@@ -13,11 +13,11 @@ import type { Settings } from '../../../config/settings'
 const initQuickMenu = () => {
   contentScriptLog('QuickMenu')
 
-  document.body.classList.add('syncia_body')
+  document.body.classList.add('watson_body')
   const root = createRoot(document.createElement('div'))
   root.render(
     <HighlightMenu
-      target=".syncia_body"
+      target=".watson_body"
       menu={({ selectedText, setMenuOpen }) => (
         <QuickMenu selectedText={selectedText} setMenuOpen={setMenuOpen} />
       )}
